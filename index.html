@@ -3,6 +3,22 @@
 <meta name="color-scheme" content="dark">
 <title>Apna Digital Product Business Launch Karo</title>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '922089116084784');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=922089116084784&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 <style>
 :root{--bg:#090d18;--bg2:#0f1526;--surf:#141c33;--ink:#f3f1ea;--mut:#9aa6c4;--acc:#ffd23f;--vio:#7c5cff;--grn:#25e08f;--line:#243050;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -239,5 +255,12 @@ document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
 var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target,n=+el.dataset.n,d=+(el.dataset.d||0),p=el.dataset.p||'',s=el.dataset.s||'',t0=null;
 function f(t){if(!t0)t0=t;var k=Math.min((t-t0)/1200,1);el.textContent=p+(n*k).toFixed(d)+s;if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f);io2.unobserve(el)})},{threshold:.5});
 document.querySelectorAll('[data-n]').forEach(function(e){io2.observe(e)});
+document.querySelectorAll('a[href="https://superprofile.bio/vp/digitalproduct-course"]').forEach(function(link){
+  link.addEventListener('click', function(){
+    if(typeof fbq === 'function'){
+      fbq('track', 'AddPaymentInfo');
+    }
+  });
+});
 </script>
 </body></html>
